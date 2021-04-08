@@ -1,8 +1,13 @@
+.header{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 40px;
+}
+
 .top{
   color: white;
   background-color: #2766CC;
   padding: 1rem;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .top a{
@@ -38,10 +43,21 @@
 
 .icon-name1{
   margin-left: 10px;
+  font-size: 15px;
 }
 
 .icon-name2{
   margin-left: 10px;
+  font-size: 15px;
+}
+
+.icon-wrap1{
+  display: flex;
+}
+
+.icon-wrap2{
+  display: flex;
+  margin-left: 120px;
 }
 
 .title{
@@ -61,3 +77,4 @@
 .box2{
   display: flex;
 }
+

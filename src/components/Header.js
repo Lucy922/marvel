@@ -21,22 +21,22 @@ const Header = () => {
          </div>
          <div className="box2">
            <div className="icons">
+
              <div className="icon-wrap1">
               <FaShoppingBag />
                 <p className="icon-name1">Bag</p>
-              </div>
-            <div className="icon-wrap2">
-              <FaUser />
+            </div>
+              <div className="icon-wrap2">
+                <FaUser />
                 <p className="icon-name2">Account</p>
-             </div>
+              </div>
           
            </div>
-           
          </div>
        </div>
      </div>
    </div>
-   </div>
+  </div>
    
   ) 
 }
