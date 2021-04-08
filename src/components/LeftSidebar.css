@@ -1,0 +1,39 @@
+.left-sidenav{
+  padding-top: 16px;
+  border-right: 1px solid grey;
+  width: 260px;
+  height: 100%;
+}
+
+.sidenav a{
+  padding: 6px;
+  text-decoration: none;
+  display: block;
+  color: #686868;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sidenav a:hover{
+  background-color: #F1F5FC;
+  border-right: 4px solid #2766CC;
+  color: #2766CC;
+}
+
+.link a{
+  display: flex;
+  align-items: center;
+  color: #2E6BCE;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 6px;
+}
+
+.link{
+  margin-top: 15px;
+}
+
+.link a svg{
+margin-left: 10px;
+}

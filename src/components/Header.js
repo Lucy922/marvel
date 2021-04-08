@@ -24,11 +24,11 @@ const Header = () => {
 
              <div className="icon-wrap1">
               <FaShoppingBag />
-                <p className="icon-name1">Bag</p>
+                <a href="#" className="icon-name1">Bag</a>
             </div>
               <div className="icon-wrap2">
                 <FaUser />
-                <p className="icon-name2">Account</p>
+                <a href="#" className="icon-name2">Account</a>
               </div>
           
            </div>
