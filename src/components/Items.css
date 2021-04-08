@@ -1,0 +1,54 @@
+.title{
+  display: flex;
+  color: #535252;
+}
+
+.number{
+  padding: 0rem 0.4rem;
+  background-color: #2E6BCE;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+  font-weight: 200;
+}
+
+.props{
+  display: block;
+  margin-top: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.amount{
+  margin-top: 10px;
+}
+
+.thumbnail img{
+ width: 90px;
+}
+
+.wrap a{
+display: flex;
+text-decoration: none;
+}
+
+.amount{
+  display: block;
+} 
+
+p{
+  font-size: 12px;
+  color: #878787;
+}
+
+.btn{
+  margin-top: 40px;
+  margin-left: 120px; 
+  padding: 0px 10px;
+  text-align: center;
+  color: #2968CD;
+  border: 1px solid #2968CD;
+  background-color: white;
+  font-weight: 600;
+}
