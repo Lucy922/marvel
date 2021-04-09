@@ -7,7 +7,6 @@
 
 .right-sidenav img{
   width: 130px;
-  margin-left: 60px;
   margin-top: 50px;
 }
 
@@ -30,6 +29,7 @@
 
 .emp{
   font-size: 15px;
+  text-align: center;
 }
 
 .paragraph{
@@ -38,6 +38,10 @@
   font-size: 14px;
 }
 
-.text-box{
+.pt{
+  text-align: center;
+}
+
+.img{
   text-align: center;
 }

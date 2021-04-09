@@ -12,15 +12,15 @@ const RightSidebar = () => {
       </div>
         <div className="img">
            <img src={image} />
-        </div>
-    
-        <div className="text-box">
-          <h3 className="emp">
+           <div className="pt">
+           <h3 className="emp">
             It's empty here
             </h3>
-          <p className="paragraph">
+            <p className="paragraph">
             Start shopping to add items to your bag
             </p>
+           </div>
+          
         </div>
     </div>
     

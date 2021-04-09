@@ -1,0 +1,56 @@
+.top-footer{
+  background-color: #2766CC;
+  margin-top: 100px;
+  padding: 40px;
+  text-align: center;
+}
+
+.top-footer-details{
+  display: flex;
+  justify-content: center;
+}
+
+.top-footer-details svg{
+  font-size: 40px;
+  color: yellow;
+}
+
+.footer-details{
+  padding-left: 70px;
+}
+
+.footer-title{
+  margin-top: 8px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.details{
+  padding-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.store-details{
+  font-size: 12px;
+}
+
+.target{
+  margin-top: 10px;
+  color: #262626;
+}
+
+.btn-link a{
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  background-color: #40C251;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.btn-link{
+  margin-top: 30px;
+}

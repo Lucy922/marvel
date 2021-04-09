@@ -1,31 +1,32 @@
 import "./Items.css"
 import image from '../assets/img/images.jpg'
 
-const Items = ({ title, amount}) => {
+const Items = ({ title, amount }) => {
   return (
     <div>
 
       <div>
-        <h3 className="title">
-            Electronics 
-           <div className="number">12</div> 
+        <h3 className="category-title">
+           Electronics
+           <span className="category-product-count">12</span>
         </h3>
       </div>
 
-      <div className="wrap">
+      <div className="products">
         <a href="#">
-        <div className="thumbnail">
-        <img src={image} />
+          <div className="product-details">
+            <img src={image} />
+            <div>
+              <div className="product-subtitle">{title}</div>
+              <div className="product-price">{amount}</div>
+            </div>
+          </div>
+          <div className="product-button">
+            <button className="btn">+ Add</button>
+          </div>
+        </a>
       </div>
-        <div className="props">
-          {title} 
-          <p className="amount">{amount}</p>
-        </div>
-        <button className="btn">+ Add</button>
-      </a>
-      
-      </div>
-      
+
     </div>
   )
 }
