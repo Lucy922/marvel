@@ -1,7 +1,8 @@
-import "./Items.css"
+import "./Products.css"
 import image from '../assets/img/images.jpg'
+import { Link } from "react-router-dom";
 
-const Items = ({ title, amount }) => {
+const Products = ({ title, amount }) => {
   return (
     <div>
 
@@ -13,7 +14,7 @@ const Items = ({ title, amount }) => {
       </div>
 
       <div className="products">
-        <a href="#">
+        <Link to="/details">
           <div className="product-details">
             <img src={image} />
             <div>
@@ -24,11 +25,11 @@ const Items = ({ title, amount }) => {
           <div className="product-button">
             <button className="btn">+ Add</button>
           </div>
-        </a>
+        </Link>
       </div>
 
     </div>
   )
 }
 
-export default Items
+export default Products

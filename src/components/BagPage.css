@@ -1,0 +1,17 @@
+.img{
+  margin-top: 70px;
+}
+
+.btn-btn{
+  margin-top: 50px;
+}
+
+.btn-btn a{
+  text-decoration: none;
+  background-color: #F8DE4B;
+  color: #2766CC;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+}

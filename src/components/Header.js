@@ -1,6 +1,8 @@
 import "./Header.css"
 import { FaHome, FaShoppingBag, FaUser } from 'react-icons/fa'
-// import { FaShoppingBag } from 'react-icons/fa'
+import { Link } from "react-router-dom";
+
+
 
 const Header = () => {
   return (
@@ -21,14 +23,14 @@ const Header = () => {
          </div>
          <div className="box2">
            <div className="icons">
-
+          
              <div className="icon-wrap1">
               <FaShoppingBag />
-                <a href="#" className="icon-name1">Bag</a>
+                <Link to="/bag" className="icon-name1">Bag</Link>
             </div>
               <div className="icon-wrap2">
                 <FaUser />
-                <a href="#" className="icon-name2">Account</a>
+                <Link to="/account" className="icon-name2">Account</Link>
               </div>
           
            </div>
