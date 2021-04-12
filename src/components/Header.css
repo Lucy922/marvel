@@ -3,14 +3,14 @@
   padding-bottom: 35px;
 }
 
-.top{
+.top-header{
   color: white;
   background-color: #2766CC;
   padding: 1rem;
   font-size: 12px;
 }
 
-.top a{
+.top-header a{
   font-weight: bold;
   text-decoration: none;
 }
@@ -24,7 +24,6 @@
 
 .box1{
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 

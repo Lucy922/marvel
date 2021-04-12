@@ -5,7 +5,7 @@
   height: 100%;
 }
 
-.sidenav a{
+.nav a{
   padding: 6px;
   text-decoration: none;
   display: block;
@@ -14,13 +14,17 @@
   font-weight: 500;
 }
 
-.sidenav a:hover{
+.nav a:hover{
   background-color: #F1F5FC;
   border-right: 4px solid #2766CC;
   color: #2766CC;
 }
 
-.link a{
+.category-link{
+  margin-top: 15px;
+}
+
+.category-link a{
   display: flex;
   align-items: center;
   color: #2E6BCE;
@@ -30,10 +34,6 @@
   padding-left: 6px;
 }
 
-.link{
-  margin-top: 15px;
-}
-
-.link a svg{
+.category-link a svg{
 margin-left: 10px;
 }

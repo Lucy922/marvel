@@ -8,10 +8,10 @@ const Header = () => {
   return (
    
    <div className="header">
-   <div className="top">
+   <div className="top-header">
      <div className="container">made in <a>SOKO</a> </div>
    </div>
-   <div className="bottom">
+   <div className="bottom-header">
      <div className="container">
        <div className="box-wrap">
          <div className="box1">

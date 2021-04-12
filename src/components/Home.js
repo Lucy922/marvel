@@ -2,6 +2,7 @@ import "./Home.css"
 import LeftSidebar from './LeftSidebar'
 import RightSidebar from './RightSidebar'
 import Content from './Content'
+import Order from './Order'
 
 const Home = () => {
   return (

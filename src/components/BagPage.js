@@ -11,7 +11,7 @@ const BagPage = () => {
            <h3 className="emp">
             It's empty here
             </h3>
-            <p className="paragraph">
+            <p className="p">
             Start shopping to add items to your bag
             </p>
            </div>
