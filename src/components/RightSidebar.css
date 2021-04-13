@@ -33,6 +33,7 @@
 }
 
 .category-thumbnail{
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -41,7 +42,7 @@
   text-align: center;
 }
 
-.category-message-subtitle{
+.category-text{
   margin-top: 10px;
   margin-left: 35px;
   font-size: 14px;

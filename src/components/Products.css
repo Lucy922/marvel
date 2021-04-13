@@ -16,10 +16,6 @@
   font-weight: 200;
 }
 
-.product-details{
-  display: flex;
-}
-
 .products{
 display: flex;
 justify-content: space-between;
@@ -38,6 +34,10 @@ justify-content: space-between;
 .product-thumbnail img{
   width: 90px;
  }
+
+ .product-details{
+  display: flex;
+}
 
  .product-details img{
   height: 120px;

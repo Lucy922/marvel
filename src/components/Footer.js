@@ -6,44 +6,39 @@ const Footer = () => {
     <div className="footer">
       <div className="top-footer">
         <div className="top-footer-details">
-
-          <div className="footer-details">
-            <div className="footer-icon1">
+          <div className="footer-dt">
+            <div className="footer-icon">
               <FaTruck />
             </div>
-            <div className="footer-title">
+            <div className="footer-txt">
               <p>Fast delivery</p>
             </div>
           </div>
-
-          <div className="footer-details">
-            <div className="footer-icon2">
+          <div className="footer-dt">
+            <div className="footer-icon">
               <FaShieldAlt />
             </div>
-            <div className="footer-title">
+            <div className="footer-txt">
               <p>Buyer Protection</p>
             </div>
           </div>
-
-          <div className="footer-details">
-            <div className="footer-icon3">
+          <div className="footer-dt">
+            <div className="footer-icon">
               <FaIdCardAlt />
             </div>
-            <div className="footer-title">
+            <div className="footer-txt">
               <p>Customer Support</p>
             </div>
           </div>
-
         </div>
       </div>
-
       <div className="bottom-footer">
         <div className="bottom-footer-details">
           <div className="details">
             <div className="store-details">STORE DETAILS</div>
             <div className="address">
-            <h4 className="target">Target</h4>
-            <p className="para">Cham Towers, Plot 12 Nkrumah Rd, Kampala, Ug</p>
+              <h4 className="target">Target</h4>
+              <p className="text">Cham Towers, Plot 12 Nkrumah Rd, Kampala, Ug</p>
             </div>
             <div className="btn-link">
               <a href="#"> <FaWhatsapp /> Chat with us</a>

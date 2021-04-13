@@ -24,7 +24,7 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="detail">
-          <h4 className="detail-content-title">
+          <h4 className="product-content-title">
             Whatever the name is
           </h4>
           <p className="product-descrip">fdjdtdfyrjht7tgjhguit7tjiuyiyhkjuitjftdtrseawarfyiuyoyi</p>

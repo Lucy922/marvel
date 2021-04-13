@@ -16,7 +16,7 @@ const RightSidebar = () => {
           <h3 className="category-message-title">
             It's empty here
             </h3>
-          <p className="category-message-subtitle">
+          <p className="category-text">
             Start shopping to add items to your bag
             </p>
         </div>

@@ -1,0 +1,168 @@
+.account{
+  display: flex;
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.account-nav{
+  width: 20%;
+  margin-left: 20px;
+  border-right: 1px solid #CCCCCC;
+}
+
+.category-div{
+  margin-top: 20px;
+}
+
+.order-nav{
+  font-size: 15px;
+  align-items: center;
+  color: #6F6F6F;
+}
+
+.navigation{
+  padding: 4px;
+  display: flex;
+  color: #686868;
+  font-weight: 500;
+  background-color: #F1F5FC;
+  border-right: 4px solid #2766CC;
+  color: #2766CC;
+}
+
+.category-item{
+  margin-left: 15px; 
+}
+
+.category-item a{
+  text-decoration: none;
+  color: #6F6F6F;
+}
+
+.address-nav{
+  margin-top: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  color: #6F6F6F;
+}
+
+.orders{
+  display: flex;
+  width: 80%;
+  margin-top: 20px;
+  padding: 35px;
+ }
+ 
+ .order-item{
+   margin-right: 20px;
+   border: 1px solid #D4D4D4;
+   border-radius: 5px;
+   width: 30%;
+   padding: 20px;
+   background-color: #ffff;
+ }
+ 
+ .order-category-details{
+  display: flex;
+  align-items: center;
+}
+
+.order-category-details svg {
+  font-size: 30px;
+  color: #E50022;
+}
+
+.home-icon{
+  width: 2rem;
+  height: 2rem;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-icon svg{
+  color: #ccc;
+}
+
+.order-item-title{
+  font-size: 12px;
+  margin-left: 8px;
+  font-weight: 700;
+}
+
+ .order-details{
+  margin-top: 15px;
+}
+
+.item-detail{
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-number{
+  font-size: 11px;
+  font-weight: 600;
+  color: #2C2C2C;
+}
+
+.order-amount{
+  font-size: 11px;
+  font-weight: 600;
+  color: #2C2C2C;
+}
+
+.order-quantity{
+  font-size: 11px;
+  color: #787878;
+}
+
+.order-time{
+  font-size: 11px;
+  color: #787878;
+}
+
+.sp{
+  width: 8px;
+  margin-right: 5px;
+  height: 10px;
+  background-color: #FF914D;
+  border-radius: 45%;
+}
+
+.shipped{
+  display: flex;
+  align-items: center;
+  color: #FF914D; 
+  font-weight: 600;
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.delivery{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.spn{
+  width: 8px;
+  margin-right: 5px;
+  height: 10px;
+  background-color: #467CD4;
+  border-radius: 45%;
+}
+
+.delivered{
+  color: #467CD4; 
+  font-weight: 600;
+  font-size: 11px;
+}
+
+/* .shw-orders{
+  display: flex;
+  justify-content: space-between;
+} */

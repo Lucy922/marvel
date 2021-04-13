@@ -15,11 +15,11 @@
   color: yellow;
 }
 
-.footer-details{
+.footer-dt{
   padding-left: 70px;
 }
 
-.footer-title{
+.footer-txt{
   margin-top: 8px;
   color: #FFFFFF;
   font-size: 14px;
@@ -41,6 +41,10 @@
   color: #262626;
 }
 
+.btn-link{
+  margin-top: 30px;
+}
+
 .btn-link a{
   text-decoration: none;
   text-align: center;
@@ -49,8 +53,4 @@
   background-color: #40C251;
   padding: 7px;
   border-radius: 4px;
-}
-
-.btn-link{
-  margin-top: 30px;
 }

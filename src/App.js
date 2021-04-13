@@ -5,6 +5,9 @@ import Home from './components/Home'
 import BagPage from './components/BagPage'
 import ProductDetails from './components/ProductDetails'
 import Order from './components/Order'
+import Account from './components/Account'
+import Address from './components/Address'
+import Modal from './components/Modal'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -26,6 +29,16 @@ function App() {
           </Route>
           <Route path="/order">
             <Order />
+          </Route>
+          <Route path="/account">
+            <Account />
+          </Route>
+          <Route path="/address">
+            <Address />
+          </Route>
+          <Route path="/modal">
+            <Address />
+            <Modal />
           </Route>
         </Switch>
       </div>
