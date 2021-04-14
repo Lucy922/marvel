@@ -8,6 +8,7 @@ import Order from './components/Order'
 import Account from './components/Account'
 import Address from './components/Address'
 import Modal from './components/Modal'
+import VerifyModal from './components/VerifyModal'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
           <Route path="/modal">
             <Address />
             <Modal />
+          </Route>
+          <Route path="/verify">
+            <VerifyModal />
           </Route>
         </Switch>
       </div>

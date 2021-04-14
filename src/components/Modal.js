@@ -23,7 +23,6 @@ const Modal = () => {
             <div>
               <input className="input-text" type="text" placeholder="eg John Doe" />
             </div>
-
           </div>
           <div className="input-wrap">
             <div>
@@ -33,7 +32,7 @@ const Modal = () => {
               <select>
                 <option>+256</option>
               </select>
-              <input className="text" type="text" placeholder="Enter mobile number" />
+              <input className="input-field" type="text" placeholder="Enter mobile number" />
             </div>
           </div>
           <div className="input-wrap">
@@ -43,7 +42,6 @@ const Modal = () => {
             <div>
               <input className="input-text" type="text" placeholder="eg Kampala" />
             </div>
-
           </div>
           <div className="input-wrap">
             <div>
