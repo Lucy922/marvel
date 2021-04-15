@@ -3,9 +3,10 @@ import { FaCheck } from 'react-icons/fa'
 import VerifyModal from './VerifyModal'
 import Header from "./Header"
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 import Modal from "./Modal";
 
-const Order = () => {
+const Order = ({ history }) => {
   const [phoneNumber, setPhoneNumber] = useState("")
   const [modal, setModal] = useState(false)
   const [addressModal, setAddressModal] = useState(false)
@@ -13,7 +14,7 @@ const Order = () => {
   const toggle = () => setModal(false)
   const [accountStep, setAccountStep] = useState("active")
   const [addressStep, setAddressStep] = useState("inactive")
-  const [paymentStep] = useState("inactive")
+  const [paymentStep, setPaymentStep] = useState("inactive")
   const [selectedAddress, setSelectedAddress] = useState()
 
   const [addresses] = useState([
@@ -33,7 +34,7 @@ const Order = () => {
 
   return (
     <>
-    <Header />
+      <Header />
       <div className="container">
         <div className="order-div">
           <div className="account-div">
@@ -72,31 +73,55 @@ const Order = () => {
                   </div> : ""}
                 </div>
               </li>
-              <li className={addressStep === "active" ? "timeline__entry" : "timeline__entry inactive"}>
-                <span className={addressStep === "active" ? "timeline__id" : "timeline__id inactive"}>2</span>
+              <li className={addressStep === "active" || addressStep === "done" ? "timeline__entry" : "timeline__entry inactive"}>
+                <span className={addressStep === "active" || addressStep === "done" ? "timeline__id" : "timeline__id inactive"}>
+                  {addressStep === "done" ? (<FaCheck />) : "2"}
+                </span>
                 <div className="timeline__content">
-                  <h3 className="tl-title">Delivery address</h3>
+                  <div className="tl-details">
+                    <h3 className="tl-title">Delivery address</h3>
+                    {addressStep === "done" ? <div>
+                      <button className="change">Change Address</button>
+                    </div> : ""}
+
+                  </div>
+
                   <div className="tl-txt">Select your delivery address from the existing one or add new one.
                   </div>
-                  {addressStep === "active" ? <div className="info">
-                    { addresses.map((address, i) => (
-                      <button className={selectedAddress === i ? "btn-info active" : "btn-info" } key={i} onClick={(e) => {
-                        setSelectedAddress(i)
-                      }}>
-                        {selectedAddress === i ? (
-                          <span className="checked"><FaCheck /></span>
-                        ) : ""}
-                        <h4 className="client-name">{address.name}</h4>
-                        <div className="address">{address.address}</div>
-                        <div className="phone">{address.number}</div>
-                      </button>
-                    ))}
-                    <button className="add-address" onClick={() => setAddressModal(true)}>
-                       + Add New Address
+                  <>
+                    {addressStep === "active" ? <><div className="info">
+                      {addresses.map((address, i) => (
+                        <button className={selectedAddress === i ? "btn-info active" : "btn-info"} key={i} onClick={(e) => {
+                          setSelectedAddress(i)
+                        }}>
+                          {selectedAddress === i ? (
+                            <span className="checked"><FaCheck /></span>
+                          ) : ""}
+                          <h4 className="client-name">{address.name}</h4>
+                          <div className="address">{address.address}</div>
+                          <div className="phone">{address.number}</div>
+                        </button>
+                      ))}
+                      <button className="add-address" onClick={() => setAddressModal(true)}>
+                        + Add New Address
                     </button>
-                    
-                  </div> : ""}
-                  <button className="continue_btn">Continue</button>
+                    </div>
+
+                      <div>
+                        <button className="continue_btn" onClick={() => {
+                          setAddressStep("done")
+                          setPaymentStep("active")
+                        }}>Continue</button>
+                      </div></>
+                      : ""}
+                    {addressStep === "done" ? (
+                      <div className="client-info">
+                        <div className="name">Shrey Karah</div>
+                        <div className="delivery-address">Quench Ville, Plot 12 Nkrumah Rd Kampala, Uganda</div>
+                      </div>
+                    ) : ""}
+                  </>
+
                 </div>
               </li>
               <li className={paymentStep === "active" ? "timeline__entry" : "timeline__entry inactive"}>
@@ -104,17 +129,19 @@ const Order = () => {
                 <div className="timeline__content">
                   <h3 className="tl-title">Payment</h3>
                   <div className="tl-txt">Select payment method</div>
-                  {paymentStep === "active" ? <div className="payment">
+                  {paymentStep === "active" ? <> <div className="payment">
                     <div>
                       <input className="checkbox" type="checkbox" checked />
                     </div>
                     <div className="msg">
                       <h5>Cash on delivery</h5>
                     </div>
-                    <div className="order-button">
-                      <button className="order-btn">Place Order</button>
-                    </div>
                   </div>
+                    <div className="order-button">
+                      <button className="order-btn" onClick={() => {
+                        history.push("/success")
+                      }}>Place Order</button>
+                    </div> </>
                     : ""}
 
                 </div>
@@ -129,7 +156,7 @@ const Order = () => {
                 </h3>
                 <div className="category-product-count">0</div>
               </div>
-              <a href="address" className="clear-bag">Clear Bag</a>
+              <Link to="/" className="clear-bag">Clear Bag</Link>
             </div>
             <div>
               <div className="order">

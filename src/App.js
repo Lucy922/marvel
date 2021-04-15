@@ -28,9 +28,7 @@ function App() {
             <ProductDetails />
             <Footer />
           </Route>
-          <Route path="/order">
-            <Order />
-          </Route>
+          <Route path="/order" component={Order}/>
           <Route path="/account">
             <Account />
           </Route>

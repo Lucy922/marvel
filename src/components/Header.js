@@ -1,10 +1,10 @@
 import "./Header.css"
 import { FaHome, FaShoppingBag, FaUser } from 'react-icons/fa'
-import { NavLink  } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 
-const Header = () => {
+const Header = ({ children, bag }) => {
   return (
 
     <div className="header">
@@ -24,14 +24,18 @@ const Header = () => {
             <div>
               <div className="nav-links">
                 <div className="nav-link">
-                  <NavLink  to="/bag" className="nav-name" activeClassName="selected"><FaShoppingBag /> Bag</NavLink >
+                  <NavLink to="/bag" className="nav-name" activeClassName="selected"><FaShoppingBag />
+                    <span className="nav-span">2</span>
+                    <span>Bag</span>
+                  </NavLink >
                 </div>
                 <div className="nav-link">
-                  <NavLink  to="/account" className="nav-name" activeClassName="selected"><FaUser /> Account</NavLink >
+                  <NavLink to="/account" className="nav-name" activeClassName="selected"><FaUser /> Account</NavLink >
                 </div>
               </div>
             </div>
           </div>
+          {children}
         </div>
       </div>
     </div>

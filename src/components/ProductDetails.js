@@ -15,12 +15,13 @@ const ProductDetails = () => {
   return (
     <>
       <Header>
-        <div>
-          <div>
+        <div className="furniture-nav">
+          <Link to="/" className="furniture">
             <FaChevronLeft />
-          </div>
-          <div>Furniture</div>
+              Furniture
+          </Link>
         </div>
+
       </Header>
       <div className="container">
         <div className="detail-content">
@@ -35,7 +36,7 @@ const ProductDetails = () => {
           </div>
           <div className="detail">
             <h4 className="product-content-title">
-              Whatever the name is
+              Norbury Scandinavian wood Leg Ottoman
           </h4>
             <p className="product-descrip">fdjdtdfyrjht7tgjhguit7tjiuyiyhkjuitjftdtrseawarfyiuyoyi</p>
             <div className="amount-details">

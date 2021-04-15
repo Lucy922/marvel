@@ -1,3 +1,25 @@
+.furniture-nav{
+  margin: 10px 0 0 0;
+}
+
+.furniture-nav h3{
+  margin-left: 10px;
+}
+
+.furniture{
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.furniture svg{
+  margin-right: 25px;
+}
+
 .detail-content{
   display: flex;
 }
@@ -80,23 +102,23 @@
 }
 
 .btn1{
-  border: 2px solid #2766CC;
+  border: 2px solid blue;
   background-color: white;
   border-radius: 4px;
   font-weight: 600;
   font-size: 15px;
-  color: #2766CC;
+  color: blue;
   padding: 10px 50px;
   margin-right: 15px;
 }
 
 .btn2{
   border: none;
-  background-color: #F8DE4B;
+  background-color: yellow;
   border-radius: 4px;
   font-weight: 600;
   font-size: 15px;
-  color: #2766CC;
+  color: blue;
   padding: 12px 50px;
 }
 
