@@ -1,8 +1,12 @@
 import "./Account.css"
+import Header from "./Header"
 import { FaDotCircle, FaList, FaMapMarker, FaHome } from 'react-icons/fa'
 
 const Account = () => {
   return (
+
+    <>
+    <Header />
     <div className="container">
       <div className="account">
         <div className="account-nav">
@@ -11,7 +15,7 @@ const Account = () => {
               <div className="navigation">
                 <div><FaList /></div>
                 <div className="category-item">
-                  <a href="#">My order</a></div>
+                  <a href="address">My order</a></div>
               </div>
             </div>
             <div className="address-nav">
@@ -21,11 +25,6 @@ const Account = () => {
             </div>
           </div>
         </div>
-        {/* <div className="shw-orders">
-          <div><h3>Showing all orders</h3></div>
-          <div>vyfy</div>
-        </div> */}
-
         <div className="orders">
           <div className="order-item">
             <div className="order-category-details">
@@ -82,6 +81,7 @@ const Account = () => {
         </div>
       </div>
     </div>
+    </>
 
   )
 }

@@ -56,12 +56,8 @@
   font-size: 13px;
   width: 40%;
   font-weight: 500;
-  background-color: white;
-}
-
-.new-address a{
-  text-decoration: none;
   color: #2766CC;
+  background-color: white;
 }
 
 .address-category{

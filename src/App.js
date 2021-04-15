@@ -8,14 +8,15 @@ import Order from './components/Order'
 import Account from './components/Account'
 import Address from './components/Address'
 import Modal from './components/Modal'
+import OrderSuccess from './components/OrderSuccess'
 import VerifyModal from './components/VerifyModal'
+import TrackOrder from './components/TrackOrder'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -43,6 +44,12 @@ function App() {
           </Route>
           <Route path="/verify">
             <VerifyModal />
+          </Route>
+          <Route path="/success">
+            <OrderSuccess />
+          </Route>
+          <Route path="/trackorder">
+            <TrackOrder />
           </Route>
         </Switch>
       </div>

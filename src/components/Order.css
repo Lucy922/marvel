@@ -11,7 +11,7 @@
 }
 
 .tl-title{
-  margin-top: 40px;
+  /* margin-top: 40px; */
   font-size: 15px;
   color: #2C2C2C;
 }
@@ -88,6 +88,8 @@ select{
 }
 
 .btn-info{
+  outline: none;
+  position: relative;
   text-align: left;
   margin-right: 20px;
   width: 25%;
@@ -98,6 +100,7 @@ select{
 }
 
 .client-name{
+  color: #414141;
   font-size: 13px;
 }
 
@@ -108,6 +111,7 @@ select{
 }
 
 .phone{
+  color: #414141;
   margin-top: 15px;
   font-size: 11px;
 }
@@ -154,8 +158,8 @@ select{
 
 .order-btn{
   padding: 9px 60px;
-  color: #2B68C9;
-  background-color: #F8DE4B;
+  color: blue;
+  background-color: yellow;
   border: none;
   border-radius: 3px;
   font-weight: 800;
@@ -281,4 +285,120 @@ select{
   color: #00B600;
 }
 
+
+/*Timeline styles*/
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 2em;
+  width: 2px;
+  height: 100%;
+  /* background: #2766CC; */
+}
+
+.timeline__entry {
+  position: relative;
+  /* margin-bottom: 4em; */
+  color: #fff;
+}
+
+.timeline__entry::before {
+  content: "";
+  position: absolute;
+  left: 2em;
+  width: 2px;
+  height: 100%;
+  background-color: #2766CC;
+}
+
+.timeline__entry.inactive:before {
+  /* content: "";
+  position: absolute;
+  left: 2em;
+  width: 2px;
+  height: 100%; */
+  background: #D4D4D4;
+}
+
+.timeline__entry::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeline__id {
+  position: absolute;
+  left: 2em;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99%;
+  background: #2766CC;
+  color: #fff;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.timeline__id.inactive {
+  background-color: #fff;
+  border: 2px solid #D4D4D4;
+  color: #000;
+}
+
+.timeline__content {
+  position: relative;
+  display: block;
+  margin-left: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 4rem;
+}
+
   
+.btn-info input{
+  position: absolute;
+  visibility: hidden;
+}
+
+.continue_btn{
+  margin-top: 20px;
+  padding: 9px 60px;
+  color: blue;
+  background-color: yellow;
+  border: none;
+  border-radius: 3px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.checked{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  background-color: #2766CC;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  /* padding: 4px; */
+  font-size: 10px;
+  border-radius: 100%;
+}
+
+.btn-info.active{
+  border: 1px solid #2766CC;
+  background-color: #E9EFF9;
+}

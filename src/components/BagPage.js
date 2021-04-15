@@ -1,12 +1,15 @@
 import "./BagPage.css"
 import image from '../assets/img/image.png'
 import { Link } from "react-router-dom";
+import Header from './Header'
 
 const BagPage = () => {
   return (
+    <>
+    <Header />
     <div>
       <div className="category-thumbnail">
-        <img src={image} />
+        <img src={image} alt="image" />
         <div className="category-message">
           <h3 className="category-message-title">
             It's empty here
@@ -20,6 +23,8 @@ const BagPage = () => {
         </div>
       </div>
     </div>
+    </>
+    
   )
 }
 

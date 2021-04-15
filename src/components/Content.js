@@ -1,10 +1,18 @@
+import { FaSearch } from "react-icons/fa"
 import "./Content.css"
 import Products from "./Products"
 
-const Content = () => {
+const Content = ({products}) => {
   return (
    <div className="content">
-      <Products title='kids 2pk cloth face mask' amount='UGX 185,000' />
+     <div className="search__wrapper">
+       <form className="search">
+         <input className="search__input" type="text" placeholder="search products..."  />
+         <button className="search__btn"><FaSearch /></button>
+       </form>
+     </div>
+     
+      <Products products={products}/>
   </div>
     
    

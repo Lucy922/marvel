@@ -1,3 +1,40 @@
 .content{
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
  flex: 1;
+}
+
+.search__wrapper {
+  position: relative;
+  margin-top: -24px;
+  margin-bottom: 70px;
+}
+
+.search__input{
+  outline: none;
+  width: 70%;
+  padding: 4px 10px 4px 10px;
+  background-color: #F0F0F0;
+  color: #B1B1B1;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.search__btn{
+  outline: none;
+  background-color: yellow;
+  color: blue;
+  padding: 10px 25px;
+  border: none;
+  font-size: 17px;
+  border-bottom-right-radius: 5px;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: -10;
+  width: 100%;
 }

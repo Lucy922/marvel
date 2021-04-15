@@ -1,9 +1,11 @@
 import "./Address.css"
+import Header from "./Header"
 import { FaList, FaMapMarker } from 'react-icons/fa'
-import { Link } from "react-router-dom";
 
-const Address = () => {
+const Address = ({onChange}) => {
   return (
+    <>
+    <Header />
     <div className="container">
       <div className="account">
         <div className="acc-wrap">
@@ -14,7 +16,7 @@ const Address = () => {
                   <FaList />
                 </div>
                 <div className="category-item">
-                  <a href="#">
+                  <a href="address">
                     My order</a>
                 </div>
               </div>
@@ -38,17 +40,19 @@ const Address = () => {
               <div className="address">Quench Ville, Plot 12 Nkrumah Rd, Kampala, Uganda</div>
               <div className="phone">+256 76 633 4574</div>
               <div className="info-links">
-                <div className="edit"><a href="#">Edit</a></div>
-                <div className="delete"><a href="#">Delete</a></div>
+                <div className="edit"><a href="address">Edit</a></div>
+                <div className="delete"><a href="address">Delete</a></div>
               </div>
             </button>
-            <button className="new-address">
-              <Link to="/modal"><b>+</b> Add New Address</Link>
+            <button className="new-address" onClick={onChange}>
+              + Add New Address
             </button>
           </div>
         </div>
       </div>
     </div>
+    </>
+    
   )
 }
 

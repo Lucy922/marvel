@@ -1,8 +1,9 @@
 import "./Modal.css"
 import { FaTimes } from 'react-icons/fa'
 import { Link } from "react-router-dom";
+import { useState } from 'react'
 
-const Modal = () => {
+const Modal = ({onChange}) => {
 
   return (
     <div className="modal">
@@ -11,9 +12,7 @@ const Modal = () => {
           <h4 className="header-title">
             Edit Address
           </h4>
-          <Link to="/address">
-            <FaTimes />
-          </Link>
+          <button className="btn-icon" onClick={onChange}><FaTimes /></button>
         </div>
         <div className="modal-body">
           <div className="input-wrap">

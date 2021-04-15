@@ -11,7 +11,7 @@ const RightSidebar = () => {
         <div className="category-product-count">0</div>
       </div>
       <div className="category-thumbnail">
-        <img src={image} />
+        <img src={image} alt="image" />
         <div className="category-message">
           <h3 className="category-message-title">
             It's empty here

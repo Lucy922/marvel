@@ -1,8 +1,8 @@
 import "./Products.css"
-import image from '../assets/img/images.jpg'
 import { Link } from "react-router-dom";
+import Header from "./Header"
 
-const Products = ({ title, amount }) => {
+const Products = ({ products }) => {
   return (
     <div>
       <div>
@@ -13,18 +13,22 @@ const Products = ({ title, amount }) => {
       </div>
 
       <div className="products">
-        <Link to="/details">
-          <div className="product-details">
-            <img src={image} />
-            <div>
-              <div className="product-title">{title}</div>
-              <div className="product-price">{amount}</div>
+        {products.map((product) => (
+          <Link to="/details">
+            <div className="product">
+              <div className="product-details">
+                <img src={product.thumbnail} alt="image" />
+                <div>
+                  <div className="product-title">{product.title}</div>
+                  <div className="product-price">{product.price}</div>
+                </div>
+              </div>
+              <div className="add-button">
+                <button className="btn">+ Add</button>
+              </div>
             </div>
-          </div>
-          <div className="add-button">
-            <button className="btn">+ Add</button>
-          </div>
-        </Link>
+          </Link>
+        ))}
       </div>
 
     </div>

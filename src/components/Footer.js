@@ -41,7 +41,7 @@ const Footer = () => {
               <p className="text">Cham Towers, Plot 12 Nkrumah Rd, Kampala, Ug</p>
             </div>
             <div className="btn-link">
-              <a href="#"> <FaWhatsapp /> Chat with us</a>
+              <a href="/"> <FaWhatsapp /> Chat with us</a>
             </div>
           </div>
         </div>

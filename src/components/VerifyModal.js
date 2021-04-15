@@ -1,9 +1,8 @@
 import "./VerifyModal.css"
-import { Link } from "react-router-dom";
 import { FaTimes } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
 
-const VerifyModal = ({ onToggle }) => {
+const VerifyModal = ({ onToggle, setAddressStep, setAccountStep}) => {
   const [ countdown, setCountdown ] = useState(5);
 
   useEffect(() => {
@@ -38,8 +37,9 @@ const VerifyModal = ({ onToggle }) => {
        getCodeBoxElement(index).blur();
        // Submit code
        console.log('submit code ');
-
-
+       onToggle()
+       setAccountStep("done")
+       setAddressStep("active")
       }
     }
 

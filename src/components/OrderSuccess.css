@@ -1,0 +1,57 @@
+.image{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.heading-wrap{
+  margin-top: 10px;
+}
+
+.heading{
+  font-size: 16px;
+}
+
+.image__text{
+  color: #676767;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.order__number{
+  color: #676767;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.btn__wrap{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping{
+  outline: none;
+  background-color: yellow;
+  color: blue;
+  font-weight: 500;
+  font-weight: 700;
+  padding: 10px 30px 10px 30px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.track__order{
+  outline: none;
+  font-weight: 500;
+  background-color: #ffff;
+  color: blue;
+  font-weight: 700;
+  padding: 10px 30px 10px 30px;
+  margin-left: 15px;
+  border: 2px solid blue;
+  border-radius: 4px;
+  cursor: pointer;
+}

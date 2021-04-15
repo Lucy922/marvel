@@ -9,13 +9,23 @@ import image from '../assets/img/images.jpg'
 import "./ProductDetails.css"
 import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import Header from "./Header"
 
 const ProductDetails = () => {
   return (
+    <>
+    <Header>
+      <div>
+        <div>
+        <FaChevronLeft/>
+        </div>
+        <div>Furniture</div>
+      </div>
+    </Header>
     <div className="container">
       <div className="detail-content">
         <div className="thumbnail">
-          <img src={image}></img>
+          <img src={image} alt="image"></img>
           <div className="span-div">
             <span className="span active"></span>
             <span className="span"></span>
@@ -76,7 +86,7 @@ const ProductDetails = () => {
 
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={Duvet}></img>
+              <img src={Duvet} alt="image"></img>
             </div>
             <h3 className="related-product-name">
               Holiday Print Flannel Sheet Set
@@ -87,7 +97,7 @@ const ProductDetails = () => {
               <div className="discount-tag">
                 -20%
               </div>
-              <img src={pillow}></img>
+              <img src={pillow} alt="image"></img>
             </div>
 
             <h3 className="related-product-name">
@@ -96,7 +106,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={natural} />
+              <img src={natural} alt="image" />
             </div>
 
             <h3 className="related-product-name">
@@ -105,7 +115,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={download} />
+              <img src={download} alt="image" />
             </div>
 
             <h3 className="related-product-name">
@@ -114,7 +124,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={pink} />
+              <img src={pink} alt="image" />
             </div>
             <h3 className="related-product-name">
               50' x '70 Jersy Weighted Throw
@@ -122,7 +132,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={images1} />
+              <img src={images1} alt="image"/>
             </div>
             <h3 className="related-product-name">
               Flannel Herringbone
@@ -130,7 +140,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={bed} />
+              <img src={bed} alt="image" />
               <div className="discount-tag">
                 -20%
           </div>
@@ -140,10 +150,10 @@ const ProductDetails = () => {
               </h3>
           </div>
         </div>
-
       </div>
-
     </div>
+     </>
+    
   )
 }
 
