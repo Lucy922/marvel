@@ -129,7 +129,7 @@ const Order = () => {
                 </h3>
                 <div className="category-product-count">0</div>
               </div>
-              <a href="#" className="clear-bag">Clear Bag</a>
+              <a href="address" className="clear-bag">Clear Bag</a>
             </div>
             <div>
               <div className="order">

@@ -86,7 +86,7 @@ const ProductDetails = () => {
 
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={Duvet} alt="duvet image"></img>
+              <img src={Duvet} alt="this is a thumbnail"></img>
             </div>
             <h3 className="related-product-name">
               Holiday Print Flannel Sheet Set
@@ -97,7 +97,7 @@ const ProductDetails = () => {
               <div className="discount-tag">
                 -20%
               </div>
-              <img src={pillow} alt="pillow image"></img>
+              <img src={pillow} alt="this is a thumbnail"></img>
             </div>
 
             <h3 className="related-product-name">
@@ -106,7 +106,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={natural} alt="natural image" />
+              <img src={natural} alt="this is a thumbnail" />
             </div>
 
             <h3 className="related-product-name">
@@ -115,7 +115,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={download} alt="download image" />
+              <img src={download} alt="this is a thumbnail" />
             </div>
 
             <h3 className="related-product-name">
@@ -124,7 +124,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={pink} alt="pink image" />
+              <img src={pink} alt="this is a thumbnail" />
             </div>
             <h3 className="related-product-name">
               50' x '70 Jersy Weighted Throw
@@ -132,7 +132,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={images1} alt="chair image"/>
+              <img src={images1} alt="this is a thumbnail"/>
             </div>
             <h3 className="related-product-name">
               Flannel Herringbone
@@ -140,7 +140,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={bed} alt=" bed image" />
+              <img src={bed} alt="this is a thumbnail" />
               <div className="discount-tag">
                 -20%
           </div>

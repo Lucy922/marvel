@@ -16,7 +16,7 @@ const Products = ({ products }) => {
           <Link to="/details">
             <div className="product">
               <div className="product-details">
-                <img src={product.thumbnail} alt="product image" />
+                <img src={product.thumbnail} alt="this is a thumbnail" />
                 <div>
                   <div className="product-title">{product.title}</div>
                   <div className="product-price">{product.price}</div>
