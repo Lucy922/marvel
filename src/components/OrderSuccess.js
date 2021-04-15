@@ -10,7 +10,7 @@ const OrderSuccess = () => {
     <Header />
     <div className="container">
         <div className="image">
-          <img src={image}/>
+          <img src={image} alt="successful"/>
           <div className="heading-wrap">
           <h5 className="heading">
             Thank you

@@ -9,7 +9,7 @@ const BagPage = () => {
     <Header />
     <div>
       <div className="category-thumbnail">
-        <img src={image} alt="image" />
+        <img src={image} alt="category thumbnail" />
         <div className="category-message">
           <h3 className="category-message-title">
             It's empty here

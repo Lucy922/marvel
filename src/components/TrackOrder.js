@@ -57,7 +57,7 @@ const TrackOrder = () => {
             <div className="product-order">
               <div className="product__tab">
               <div className="product__image">
-                <img src={image} />
+                <img src={image} alt="product image" />
               </div>
               <div className="product__text">
                 <div className="product__heading">Norbury Scandinavian Wood Leg Ottoman</div>
@@ -74,7 +74,7 @@ const TrackOrder = () => {
 
               <div className="product__tab">
               <div className="product__image">
-                <img src={image} />
+                <img src={image} alt="product image" />
               </div>
               <div className="product__text">
                 <div className="product__heading">Metal Country Chalet Charm and Wood Bench - Saracina Home</div>

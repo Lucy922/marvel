@@ -25,7 +25,7 @@ const ProductDetails = () => {
     <div className="container">
       <div className="detail-content">
         <div className="thumbnail">
-          <img src={image} alt="image"></img>
+          <img src={image} alt="thumbnail"></img>
           <div className="span-div">
             <span className="span active"></span>
             <span className="span"></span>
@@ -86,7 +86,7 @@ const ProductDetails = () => {
 
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={Duvet} alt="image"></img>
+              <img src={Duvet} alt="duvet image"></img>
             </div>
             <h3 className="related-product-name">
               Holiday Print Flannel Sheet Set
@@ -97,7 +97,7 @@ const ProductDetails = () => {
               <div className="discount-tag">
                 -20%
               </div>
-              <img src={pillow} alt="image"></img>
+              <img src={pillow} alt="pillow image"></img>
             </div>
 
             <h3 className="related-product-name">
@@ -106,7 +106,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={natural} alt="image" />
+              <img src={natural} alt="natural image" />
             </div>
 
             <h3 className="related-product-name">
@@ -115,7 +115,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={download} alt="image" />
+              <img src={download} alt="download image" />
             </div>
 
             <h3 className="related-product-name">
@@ -124,7 +124,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={pink} alt="image" />
+              <img src={pink} alt="pink image" />
             </div>
             <h3 className="related-product-name">
               50' x '70 Jersy Weighted Throw
@@ -132,7 +132,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={images1} alt="image"/>
+              <img src={images1} alt="chair image"/>
             </div>
             <h3 className="related-product-name">
               Flannel Herringbone
@@ -140,7 +140,7 @@ const ProductDetails = () => {
           </div>
           <div className="related-product-thumbnail">
             <div className="image">
-              <img src={bed} alt="image" />
+              <img src={bed} alt=" bed image" />
               <div className="discount-tag">
                 -20%
           </div>

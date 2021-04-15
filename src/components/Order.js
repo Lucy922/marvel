@@ -1,6 +1,5 @@
 import "./Order.css"
 import { FaCheck } from 'react-icons/fa'
-import { Link } from "react-router-dom";
 import VerifyModal from './VerifyModal'
 import Header from "./Header"
 import { useState } from 'react'
@@ -14,10 +13,10 @@ const Order = () => {
   const toggle = () => setModal(false)
   const [accountStep, setAccountStep] = useState("active")
   const [addressStep, setAddressStep] = useState("inactive")
-  const [paymentStep, setPaymentStep] = useState("inactive")
+  const [paymentStep] = useState("inactive")
   const [selectedAddress, setSelectedAddress] = useState()
 
-  const [addresses, setAddress] = useState([
+  const [addresses] = useState([
     {
       name: "john Doe",
       number: 256873554342,

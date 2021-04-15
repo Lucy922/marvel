@@ -1,6 +1,5 @@
 import "./Products.css"
 import { Link } from "react-router-dom";
-import Header from "./Header"
 
 const Products = ({ products }) => {
   return (
@@ -17,7 +16,7 @@ const Products = ({ products }) => {
           <Link to="/details">
             <div className="product">
               <div className="product-details">
-                <img src={product.thumbnail} alt="image" />
+                <img src={product.thumbnail} alt="product image" />
                 <div>
                   <div className="product-title">{product.title}</div>
                   <div className="product-price">{product.price}</div>
