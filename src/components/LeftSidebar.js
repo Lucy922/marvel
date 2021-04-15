@@ -14,7 +14,6 @@ const LeftSidebar = () => {
         <a href="/">Kids (9)</a>
       </div>
 
-
       <div className="category-link">
         <a href="/">
           View all categories <FaChevronRight />

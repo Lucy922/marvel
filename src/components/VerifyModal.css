@@ -62,21 +62,6 @@ background-color: rgba(255, 255, 255, 0.883);
   color: #c7c3c3b7;
 }
 
-.modal-timer{
-  margin-left: 5px;
-  padding: 2px 2px 2px 2px;
-  font-size: 13px;
-  border-radius: 40%;
-}
-
-.num{
-  padding: 2px 2px 2px 2px;
-  border-right: 3px solid #c7c3c3a8;
-  border-top: 3px solid #c7c3c3a8;
-  border-bottom: 3px solid #c7c3c3a8;
-  border-radius: 40%;
-}
-
 .resend{
   margin-top: 6px;
 }
@@ -84,6 +69,21 @@ background-color: rgba(255, 255, 255, 0.883);
 .reset{
   border: none;
   color: blue;
+}
+
+.modal-timer{
+  margin-left: 5px;
+  padding: 2px 2px 2px 2px;
+  font-size: 13px;
+  border-radius: 40%;
+}
+
+.number-countdown{
+  padding: 2px 2px 2px 2px;
+  border-right: 3px solid #c7c3c3a8;
+  border-top: 3px solid #c7c3c3a8;
+  border-bottom: 3px solid #c7c3c3a8;
+  border-radius: 40%;
 }
 
 .btn-icon{

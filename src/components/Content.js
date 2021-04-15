@@ -11,7 +11,6 @@ const Content = ({products}) => {
          <button className="search__btn"><FaSearch /></button>
        </form>
      </div>
-     
       <Products products={products}/>
   </div>
     
